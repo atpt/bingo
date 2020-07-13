@@ -480,49 +480,6 @@ class GUI implements Handler {
 
 		sliderPanel2.add(sliderHelp2);
 
-		// // Make third slider for delay time
-		// JPanel sliderPanel3 = new JPanel() {
-		// 	@Override
-		// 	public Dimension getPreferredSize() {
-		// 		return new Dimension(500,100);
-		// 	};
-		// };
-		// constraints.gridx = 0;
-		// constraints.gridy = 2;
-		// panel.add(sliderPanel3, constraints);
-		//
-		// JSlider slider3 = new JSlider(0, 1000) {
-		// 	@Override
-		// 	public Dimension getPreferredSize() {
-		// 		return new Dimension(500,50);
-		// 	};
-		// };
-		// slider3.setFont(new Font("Helvetica", Font.BOLD, 16));
-		// slider3.setMinorTickSpacing(20);
-		// slider3.setMajorTickSpacing(100);
-		// slider3.setSnapToTicks(false);
-		// slider3.setPaintTicks(true);
-		// slider3.setPaintLabels(true);
-		// slider3.setValue(100);
-		//
-		// slider3.setFocusable(false);
-		//
-		// sliderPanel3.add(slider3);
-		//
-		// JTextPane sliderHelp3 = new JTextPane() {
-		// 	@Override
-		// 	public Dimension getPreferredSize() {
-		// 		return new Dimension(500,50);
-		// 	};
-		// };
-		// sliderHelp3.setEditable(false);
-		//
-		// String text3 = "Delay (milliseconds)";
-		//
-		// Utilities.addStyledText(sliderHelp3, text3, 0, font, fontSize, Color.BLACK, true, false, true);
-		//
-		// sliderPanel3.add(sliderHelp3);
-
 		// Make bottom panel for start button
 		JPanel confirmPanel = new JPanel() {
 			@Override
@@ -568,8 +525,6 @@ class GUI implements Handler {
 		sliderPanel2.setBackground(pastelBlue);
 		sliderHelp.setBackground(pastelBlue);
 		sliderHelp2.setBackground(pastelBlue);
-		// sliderPanel3.setBackground(pastelBlue);
-		// sliderHelp3.setBackground(pastelBlue);
 		confirmPanel.setBackground(pastelBlue);
 
 		frame.display();
@@ -592,7 +547,7 @@ class GUI implements Handler {
 		int smallPanelHeight = (int) ((double) dim * 0.175);
 		// int windowDimension = (int) ((float) screenSize.getHeight()*0.9);
 
-		window = new CustomFrame(dim, dim, "Bingo", false);
+		window = new CustomFrame(dim, dim, "Bingo", true);
 
 		CustomPanel panel = window.getContentPanel();
 		GridBagConstraints constraints = panel.getConstraints();
