@@ -1,0 +1,4 @@
+#!/bin/bash
+javac RNG.java
+jar cvf RNG.jar RNG.class
+jar cfm RNG.jar RNG.mf *.class
