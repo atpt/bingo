@@ -39,3 +39,6 @@ to create an executable .jar on Mac/Linux
     1. The bottom panel displays the number of balls drawn and the number remaining in the bag.
 1. Repeat step 3-5 until the game is over.
 1. Use the middle panel to verify the winner.
+
+# Looks like
+![Bingo](../master/screenshots/game.png?raw=true "Bingo")
